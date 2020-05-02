@@ -35,18 +35,14 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: 'ProfileFont';
-  src: url("./assets/font/851tegaki_zatsu_normal_0883.ttf");
-}
 h2 {
   font-size: 200%;
-  font-family: ProfileFont;
+  font-family: "Nico Moji";
   text-align: center;
 }
 .header-title {
   font-size: 120%;
-  font-family: ProfileFont;
+  font-family: "Nico Moji";
 }
 .copy {
   a {
