@@ -1,28 +1,52 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="gray accent-4" dark>
+      <v-toolbar-title>
+        <span class="header-title">Hisashi Furuta's Portfolio</span>
+      </v-toolbar-title>
+    </v-app-bar>
+    <v-content>
+      <v-container fluid>
+        <Profile />
+      </v-container>
+    </v-content>
+    <v-footer dark>
+      <div class="flex-grow-1"></div>
+      <span class="copy">&copy; {{(new Date()).getFullYear()}} <a href="https://furutahisashi.com" target="_blank">フルタヒサシ</a>.</span>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Profile from '@/components/Profile'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Profile
   }
-}
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: 'ProfileFont';
+  src: url("./assets/font/851tegaki_zatsu_normal_0883.ttf");
+}
+.header-title {
+  font-size: 120%;
+  font-family: ProfileFont;
+}
+.copy {
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
 }
 </style>
