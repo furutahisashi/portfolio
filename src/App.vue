@@ -8,6 +8,8 @@
     <v-content>
       <v-container fluid>
         <Profile />
+        <Skills />
+        <Works />
       </v-container>
     </v-content>
     <v-footer dark>
@@ -19,11 +21,15 @@
 
 <script>
 import Profile from '@/components/Profile'
+import Skills from '@/components/Skills'
+import Works from '@/components/Works'
 
 export default {
   name: 'App',
   components: {
-    Profile
+    Profile,
+    Skills,
+    Works
   }
 };
 </script>
@@ -32,6 +38,11 @@ export default {
 @font-face {
   font-family: 'ProfileFont';
   src: url("./assets/font/851tegaki_zatsu_normal_0883.ttf");
+}
+h2 {
+  font-size: 200%;
+  font-family: ProfileFont;
+  text-align: center;
 }
 .header-title {
   font-size: 120%;

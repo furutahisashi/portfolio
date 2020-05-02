@@ -58,11 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 $size: 300px;
-h2 {
-  font-size: 200%;
-  font-family: ProfileFont;
-  text-align: center;
-}
 .profile-image {
   margin: -25px auto 0;
   width: $size;
@@ -83,6 +78,9 @@ h2 {
 }
 .profile-text {
   margin: 0 auto;
+  @media screen and (max-width: 960px) {
+    width: 310px;
+  }
   font-family: ProfileFont;
   .line {
     font-size: 18pt;
