@@ -81,7 +81,6 @@ $size: 300px;
   @media screen and (max-width: 960px) {
     width: 310px;
   }
-  font-family: "Nico Moji";
   .line {
     font-size: 18pt;
     .left, .right {

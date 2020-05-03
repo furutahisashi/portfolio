@@ -28,7 +28,6 @@ export default {
   margin: 3px auto;
   width: 320px;
   font-size: 20px;
-  font-family: "Nico Moji";
   .label {
     display: inline-block;
     width: 120px;

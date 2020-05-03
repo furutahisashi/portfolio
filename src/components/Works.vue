@@ -32,7 +32,6 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  font-family: "Nico Moji";
   position: relative;
   .link {
     position: absolute;

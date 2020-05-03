@@ -35,14 +35,17 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+
+* {
+  font-family: "M PLUS Rounded 1c";
+}
 h2 {
   font-size: 200%;
-  font-family: "Nico Moji";
   text-align: center;
 }
 .header-title {
   font-size: 120%;
-  font-family: "Nico Moji";
 }
 .copy {
   a {

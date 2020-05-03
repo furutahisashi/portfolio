@@ -65,14 +65,12 @@ export default {
 <style lang="scss" scoped>
 h3 {
   font-size: 150%;
-  font-family: "Nico Moji";
   text-align: center;
 }
 .description {
   margin: 0 auto;
   width: 260px;
   font-size: 14px;
-  font-family: "Nico Moji";
   color: red;
   line-height: 1em;
 }
